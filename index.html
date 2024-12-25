@@ -18,6 +18,19 @@
             background-color: #f8f9fa;
             padding-top: 1rem;
         }
+        @media (max-width: 768px) {
+            .menu {
+                width: 100%;
+                height: auto;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
         .menu a {
             display: block;
             padding: 0.5rem 1rem;
@@ -32,8 +45,17 @@
             margin-left: 20%;
             padding: 2rem;
         }
+        @media (max-width: 768px) {
+            .content {
+                padding: 1rem;
+            }
+        }
         .project {
             margin-bottom: 2rem;
+        }
+        .project iframe {
+            width: 100%;
+            max-width: 560px;
         }
         .lightbox {
             display: none;
@@ -60,39 +82,98 @@
 
 <div class="menu">
     <nav>
-        <a href="#project1">Medical</a>
-        <a href="#project2">Metaverse</a>
-        <a href="#project3">Education</a>
-        <a href="#project3">Simulator</a>
-        <a href="#project3">Shooter</a>
-        <a href="#project3">Arcade</a>
+        <a href="#medical">Medical</a>
+        <a href="#metaverse">Metaverse</a>
+        <a href="#education">Education</a>
+        <a href="#visualisation">Visualisation</a>
+        <a href="#shooter">Shooter</a>
+        <a href="#simulation">Simulation</a>
+        <a href="#arcade">Arcade</a>
     </nav>
 </div>
 
 <div class="content">
-    <div id="project1" class="project">
+    <div id="medical" class="project">
         <h2>VR ICU</h2>
-        <iframe width="560" height="315" 
+        <p>VR ICU - virtual trainings for health care staff.</p>
+        <iframe width="100%" height="315" 
         src="https://www.youtube.com/embed/tc9Gt98VFrA?si=KEOB0wG0lsQZJLB3&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0" 
         title="YouTube video player" frameborder="0" 
         allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
-</iframe>
-
-
-        <p>This is a description of Project 1. It has cool features and a great design!</p>
+        </iframe>
     </div>
 
-    <div id="project2" class="project">
-        <h2>Project 2</h2>
-        <img src="https://via.placeholder.com/150" alt="Project 1" class="img-fluid mb-3" onclick="showLightboxImage(this.src)">
-        <p>This is a description of Project 2. It is built with amazing technologies and has awesome performance!</p>
+    <div id="metaverse" class="project">
+        <h2>Virtonex VR</h2>
+        <p>Virtonex is a metaverse for business communications.</p>
+        <p><span>Available on Meta store:</span>
+        <a href="https://www.meta.com/experiences/virtonex/5308304929273726/" target="_blank">https://www.meta.com/experiences/virtonex/5308304929273726/</a></p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/jw8nuLbClr4?si=C431n6_4uGJel7-J&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
     </div>
 
-    <div id="project3" class="project">
-        <h2>Project 3</h2>
-        <img src="https://via.placeholder.com/150" alt="Project 3" class="img-fluid mb-3" onclick="showLightboxImage(this.src)">
-        <p>This is a description of Project 3. It solves problems and is very user-friendly!</p>
+    <div id="education" class="project">
+        <h2>Virtualus lessons</h2>
+        <p>VR interactable lessons</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/3NwkoZGmAm0?si=8JgN3d2tJJRy0Hqi&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/AGLqufqFsgo?si=TVLEFv3td4VoHAmk&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/EEr5yNHEPVI?si=pAOFLBixUBv2di8Z&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/MRxWNhOCiEM?si=Rhvi1zCgITeEkzPT&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/couEtK6qaOQ?si=QhwrsBXqp90GsvdR&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+
+    <div id="visualisation" class="project">
+        <h2>Visualisation</h2>
+        <p>Visualisation of the private house</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/lthP0ntOe3Y?si=abcZSjSnYut7lcNb&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+
+    <div id="shooter" class="project">
+        <h2>Shooter VR</h2>
+        <p>Description here</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/1fjDmyBzsQM?si=XFy3P6CW78zaQybV&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+
+    <div id="simulation" class="project">
+        <h2>Logistics VR</h2>
+        <p>Description here</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/bLRzkalcARQ?si=-Fw1HupHe1GkqY-e&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+
+    <div id="arcade" class="project">
+        <h2>Drive3D</h2>
+        <p>Description here</p>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YKw8MFF1yyo?si=HAQJEVm4Iw3zff2K&amp;controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&iv_load_policy=3&showinfo=0"
+        title="YouTube video player" frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
     </div>
 </div>
 
@@ -111,17 +192,6 @@
         lightboxImg.src = src;
         lightboxImg.style.display = 'block';
         lightboxVideo.style.display = 'none';
-        lightbox.classList.add('show');
-    }
-
-    function showLightboxVideo(src) {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightboxImg');
-        const lightboxVideo = document.getElementById('lightboxVideo');
-
-        lightboxVideo.src = src;
-        lightboxVideo.style.display = 'block';
-        lightboxImg.style.display = 'none';
         lightbox.classList.add('show');
     }
 
